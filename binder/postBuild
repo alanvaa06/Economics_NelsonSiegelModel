@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Enable JupyterLab extensions for widgets
+jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
+jupyter lab build
+
+# Enable notebook widgets
+jupyter nbextension enable --py widgetsnbextension
+
+echo "Binder setup complete!"

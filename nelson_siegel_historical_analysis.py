@@ -15,7 +15,7 @@ import yfinance as yf
 from typing import Dict, Tuple, List, Optional
 
 warnings.filterwarnings('ignore')
-
+#%%
 # ========================= CORE MODEL FUNCTIONS =========================
 
 def nielsen_siegel_model(t: np.ndarray, beta0: float, beta1: float, beta2: float, tau: float) -> np.ndarray:
